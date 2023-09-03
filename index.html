@@ -23,8 +23,6 @@
     <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' />
 </head>
   <body>
-    <audio autoplay loop><source src=".music.mp3"></audio>
-
     <!-- WELCOME -->
     <header data-jarallax data-speed=".8" style="background-image: url(./evie-s.jpg); background-size: cover;">
       <!-- https://unsplash.com/photos/bSVGnUCk4tk -->
@@ -60,6 +58,8 @@
         </div>
         <div class="container">
           <div class="row">
+            <div class="col-md">
+              <audio controls autoplay loop><source src="./music.mp3" type="audio/mpeg" ></audio></div>
             <div class="col-md">
 
               <!-- Address -->
@@ -131,7 +131,7 @@
 
                     <!-- Date -->
                     <h3 class="text-xs text-primary">
-                      <time datetime="2017-09-30">Akad Nikah</time>
+                      <time>Akad Nikah</time>
                     </h3>
 
                     <!-- Heading -->
@@ -172,7 +172,7 @@
 
                     <!-- Date -->
                     <h3 class="text-xs text-primary">
-                      <time datetime="2017-09-30">Resepsi Pernikahan</time>
+                      <time>Resepsi Pernikahan</time>
                     </h3>
 
                     <!-- Heading -->
@@ -212,22 +212,23 @@
       </section>
 
     <!-- RESERVATION -->
-    <section class="py-7 py-md-9 bg-light" id="reservation">
-      <div class="container pb-5">
+    <section class="bg-light">
+      <div class="container p-5">
             <h2 class="mb-2 text-center">
                 Ucapan & do'a teruntuk kedua mempelai
             </h2>
         </div>
-      <div class="row">
-        <div class="col-md-9 col-xs-6"><iframe class="airtable-embed"
-            src="https://airtable.com/embed/appS5sBsyn6hIk6QJ/shrjE62iiiqko2kMi?backgroundColor=pink" frameborder="0" onmousewheel=""
-            width="100%" height="890" style="background: #fff;"></iframe></div>
+      <div class="row mx-0">
         <div class="col-md-3 col-xs-6">
           <script src="https://static.airtable.com/js/embed/embed_snippet_v1.js"></script><iframe
             class="airtable-embed airtable-dynamic-height"
             src="https://airtable.com/embed/appS5sBsyn6hIk6QJ/shr6fNGa5jpL9B4DG?backgroundColor=pink" frameborder="0" onmousewheel=""
             width="100%" height="500" style="background: #fff;"></iframe>
         </div>
+        <div class="col-md-9 col-xs-6"><iframe class="airtable-embed"
+            src="https://airtable.com/embed/appS5sBsyn6hIk6QJ/shrjE62iiiqko2kMi?backgroundColor=pink" frameborder="0" onmousewheel=""
+            width="100%" height="890" style="background: #fff;"></iframe>
+          </div>
       </div>
     </section>
 
